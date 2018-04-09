@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="{{ pathto('_static/' + 'icon.png', 1) }}">
+        <link type="text/css" rel="stylesheet" href="{{ pathto('_static/' + 'jquery-ui/jquery-ui.min.css', 1) }}">
+        <link type="text/css" rel="stylesheet" href="{{ pathto('_static/' + 'bootstrap/css/bootstrap.min.css', 1) }}">
+        <link type="text/css" rel="stylesheet" href="{{ pathto('_static/' + 'tachyonic.css', 1) }}">
+        <script type="text/javascript" src="{{ pathto('_static/' + 'jquery-3.2.1.min.js', 1) }}"></script>
+        <script type="text/javascript" src="{{ pathto('_static/' + 'jquery-ui/jquery-ui.min.js', 1) }}"></script>
+        <script type="text/javascript" src="{{ pathto('_static/' + 'bootstrap/js/bootstrap.min.js', 1) }}"></script>
+        <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+
+        <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+
+    </head>
+    <body>
+		<div class="navbar-wrapper">
+			<div class="container">
+				<nav class="navbar navbar-inverse navbar-static-top">
+					<div class="container">
+						<div class="navbar-header">
+                            <a href="#" class="navbar-left pull-left"><img src="{{ pathto('_static/' + 'icon.png', 1) }}"></a>
+                            <a class="navbar-brand" href="{{ pathto('index') }}">{{ shorttitle }}</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="jumbotron">
+            <div class="container">
+                {{ title|striptags|e }}{{ titlesuffix }}
+            </div>
+		</div>
+		<div class="push"></div>
+        <!––DOC––>
+        <div class="container">
+            <div class"row">
+                <div class="col-sm-3">
+                    <div class="doc-menu">
+                        {{ toctree() }}
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="rst-content">
+                    {% block body %} {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!––DOC––>
+    </body>
+</html>
