@@ -5,7 +5,7 @@ Tachyonic Project Sphinx Theme
 Quick Links
 -----------
 
-* `Website <http://www.tachyonic.org/`__.
+* `Website <http://www.tachyonic.org/>`__.
 
 Installation
 ------------
@@ -14,7 +14,7 @@ Tachyonic currently fully supports `CPython <https://www.python.org/downloads/>`
 
 Installation
 ============
-Installation from PyPI_ is fairly straightforward:
+Installation from PyPI is fairly straightforward:
 
 1. Install the package::
 
