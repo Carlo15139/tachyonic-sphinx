@@ -18,7 +18,7 @@ Installation from PyPI is fairly straightforward:
 
 1. Install the package::
 
-      $ pip install tachynic-sphinx
+      $ pip install tachyonic-sphinx
 
 2. Edit the "conf.py" configuration file to point to the bootstrap theme::
 
